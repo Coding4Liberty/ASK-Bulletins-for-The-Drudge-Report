@@ -34,9 +34,6 @@ Alexa, tell Matt's Headlines to give me the latest information.
 Alexa, tell Matt's Headlines to give me information.
 
 
-
-
-
 ```
 
 ## Disclaimer

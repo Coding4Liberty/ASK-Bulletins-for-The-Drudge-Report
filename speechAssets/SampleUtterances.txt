@@ -1,0 +1,31 @@
+GetNewHeadlineIntent to give me the headline
+GetNewHeadlineIntent to give me the headlines
+GetNewHeadlineIntent to give me the latest headline
+GetNewHeadlineIntent to give me the latest headlines
+GetNewHeadlineIntent to give me the latest information
+GetNewHeadlineIntent to give me the news
+GetNewHeadlineIntent to give me the latest news
+GetNewHeadlineIntent to give me the story
+GetNewHeadlineIntent to give me the latest story
+GetNewHeadlineIntent to give me the latest stories
+GetNewHeadlineIntent to give me information
+GetNewHeadlineIntent to tell me the headline
+GetNewHeadlineIntent to tell me the headlines
+GetNewHeadlineIntent to tell me the latest headline
+GetNewHeadlineIntent to tell me the latest headlines
+GetNewHeadlineIntent to tell me the latest information
+GetNewHeadlineIntent to tell me the news
+GetNewHeadlineIntent to tell me the latest news
+GetNewHeadlineIntent to tell me the story
+GetNewHeadlineIntent to tell me the latest story
+GetNewHeadlineIntent to tell me the latest stories
+GetNewHeadlineIntent to tell me information
+GetNewHeadlineIntent for the latest headline
+GetNewHeadlineIntent for the latest headlines
+GetNewHeadlineIntent for the latest stories
+GetNewHeadlineIntent for the top stories
+GetNewHeadlineIntent for the top story
+GetNewHeadlineIntent for the top headline
+GetNewHeadlineIntent for the top headlines
+GetNewHeadlineIntent for the latest information
+GetNewHeadlineIntent for information
