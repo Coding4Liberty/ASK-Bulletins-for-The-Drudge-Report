@@ -11,9 +11,9 @@
 Example phrases to open app:
 
 ```
-Alexa, open Matt.
-Alexa, launch Matt.
-Alexa, start Matt.
+Alexa, open Matt's Headlines.
+Alexa, launch Matt's Headlines.
+Alexa, start Matt's Headlines.
 ```
 
 ## Get the latest headlines
@@ -21,14 +21,20 @@ Alexa, start Matt.
 Example phrases to read the latest headlines to you:
 
 ```
-Alexa, ask Matt for the latest headlines.
-Alexa, ask Matt for the top headlines.
+Alexa, ask Matt's Headlines for the latest headlines.
+Alexa, ask Matt's Headlines for the top headlines.
+Alexa, tell Matt's Headlines to tell me the latest headlines.
+Alexa, tell Matt's Headlines to give me the latest headlines.
 
-Alexa, tell Matt to tell me the latest headlines.
-Alexa, tell Matt to tell me the latest stories.
+Alexa, ask Matt's Headlines for information.
+Alexa, ask Matt's Headlines for the latest information.
+Alexa, tell Matt's Headlines to tell me the latest information.
+Alexa, tell Matt's Headlines to tell me information.
+Alexa, tell Matt's Headlines to give me the latest information.
+Alexa, tell Matt's Headlines to give me information.
 
-Alexa, tell Matt to give me the latest headlines.
-Alexa, tell Matt to give me the latest stories.
+
+
 
 
 ```
@@ -37,4 +43,4 @@ Alexa, tell Matt to give me the latest stories.
 
 All trademarks and copyrights are the property of their respective owners.
 
-This is *NOT* an official app from the Matt Report and is not any way officially affiliated with Matt Matt or The Matt Report.
+This is *NOT* an official app from The Drudge Report and is not any way officially affiliated with Matt Drudge or The Drudge Report.
