@@ -36,7 +36,7 @@ function getHeadlinesResponse(response) {
 		var result = []; 
 		
 		if (err) {
-			speechOutput = "Sorry, Bulletins is having trouble retrieving the latest headlines from The Druge Report. Please try again later.";
+			speechOutput = "Sorry, Reporter is having trouble retrieving the latest headlines from The Druge Report. Please try again later.";
 		} else {
 
 			getNames(headlineResponse, "content"); 
@@ -140,7 +140,7 @@ function getHeadlinesResponse(response) {
 				
 			} 
 			
-			intermediarySpeech += ". That's all from Bulletins.</speak>";
+			intermediarySpeech += ". That's all from Reporter for The Drudge Report.</speak>";
 			
 			speechOutput = {
 				speech: intermediarySpeech.toString(),
@@ -193,47 +193,47 @@ function makeHeadlineRequest(headlineLoadedCallback) {
 } 
 
 /**
- * BulletinRequester is a child of AlexaSkill.
+ * ReporterRequester is a child of AlexaSkill.
  * To read more about inheritance in JavaScript, see the link below.
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance
  */
-var BulletinRequester = function () {
+var ReporterRequester = function () {
     AlexaSkill.call(this, APP_ID);
 };
 
 // Extend AlexaSkill
-BulletinRequester.prototype = Object.create(AlexaSkill.prototype);
-BulletinRequester.prototype.constructor = BulletinRequester;
+ReporterRequester.prototype = Object.create(AlexaSkill.prototype);
+ReporterRequester.prototype.constructor = ReporterRequester;
 
-BulletinRequester.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
-    console.log("BulletinRequester onSessionStarted requestId: " + sessionStartedRequest.requestId
+ReporterRequester.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
+    console.log("ReporterRequester onSessionStarted requestId: " + sessionStartedRequest.requestId
         + ", sessionId: " + session.sessionId);
     // any initialization logic goes here
 };
 
-BulletinRequester.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
-    console.log("BulletinRequester onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
+ReporterRequester.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
+    console.log("ReporterRequester onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
     handleNewHeadlineRequest(response);
 };
 
 /**
  * Overridden to show that a subclass can override this function to teardown session state.
  */
-BulletinRequester.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
-    console.log("BulletinRequester onSessionEnded requestId: " + sessionEndedRequest.requestId
+ReporterRequester.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
+    console.log("ReporterRequester onSessionEnded requestId: " + sessionEndedRequest.requestId
         + ", sessionId: " + session.sessionId);
     // any cleanup logic goes here
 };
 
-BulletinRequester.prototype.intentHandlers = {
+ReporterRequester.prototype.intentHandlers = {
     "GetNewHeadlineIntent": function (intent, session, response) {
 		console.log("new headline intent reached");
 		handleNewHeadlineRequest(response);
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can ask Bulletins to tell you the latest headlines, or, you can say exit... What can I help you with?", "What can I help you with?");
+        response.ask("You can ask Reporter to tell you the latest headlines, or, you can say exit... What can I help you with?", "What can I help you with?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
@@ -259,7 +259,7 @@ function handleNewHeadlineRequest(response) {
 
 exports.handler = function (event, context) {	
 	
-    var headlineRequester = new BulletinRequester();
+    var headlineRequester = new ReporterRequester();
 	
     headlineRequester.execute(event, context);
 };

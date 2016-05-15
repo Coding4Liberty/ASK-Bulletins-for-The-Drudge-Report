@@ -1,4 +1,4 @@
-# ASK-News-Bulletins-for-The-Drudge-Report
+# ASK-News-Reporter-for-The-Drudge-Report
 
 <img src="./images/108_px_logo.png" width="108">
 
@@ -11,9 +11,9 @@
 Example phrases to open app:
 
 ```
-Alexa, open Bulletins.
-Alexa, launch Bulletins.
-Alexa, start Bulletins.
+Alexa, open Reporter.
+Alexa, launch Reporter.
+Alexa, start Reporter.
 ```
 
 ## Get the latest headlines
@@ -21,17 +21,17 @@ Alexa, start Bulletins.
 Example phrases to read the latest headlines to you:
 
 ```
-Alexa, ask Bulletins for the latest headlines.
-Alexa, ask Bulletins for the top headlines.
-Alexa, tell Bulletins to tell me the latest headlines.
-Alexa, tell Bulletins to give me the latest headlines.
+Alexa, ask Reporter for the latest headlines.
+Alexa, ask Reporter for the top headlines.
+Alexa, tell Reporter to tell me the latest headlines.
+Alexa, tell Reporter to give me the latest headlines.
 
-Alexa, ask Bulletins for information.
-Alexa, ask Bulletins for the latest information.
-Alexa, tell Bulletins to tell me the latest information.
-Alexa, tell Bulletins to tell me information.
-Alexa, tell Bulletins to give me the latest information.
-Alexa, tell Bulletins to give me information.
+Alexa, ask Reporter for information.
+Alexa, ask Reporter for the latest information.
+Alexa, tell Reporter to tell me the latest information.
+Alexa, tell Reporter to tell me information.
+Alexa, tell Reporter to give me the latest information.
+Alexa, tell Reporter to give me information.
 ```
 
 ## Disclaimer
