@@ -32,7 +32,6 @@ Alexa, tell Bulletins to tell me the latest information.
 Alexa, tell Bulletins to tell me information.
 Alexa, tell Bulletins to give me the latest information.
 Alexa, tell Bulletins to give me information.
-
 ```
 
 ## Disclaimer
