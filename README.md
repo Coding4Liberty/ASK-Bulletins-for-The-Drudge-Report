@@ -2,7 +2,7 @@
 
 <img src="./images/108_px_logo.png" width="108">
 
-> This is an Alexa Skills app that will read headlines from The Drudge Report to you as they appear on http://drudgereport.com. These are the headlines that appear above The Drudge Report logo and the headlines that appear in the first column on the left side of the page. It does not (yet) retrieve headlines from the column in the center of the page or the column on the right of the page.
+> This is an Alexa Skills app that will read headlines from The Drudge Report (http://drudgereport.com) to you. These are the headlines that appear above The Drudge Report logo and the headlines that appear in the first column on the left side of the page. It does not (yet) retrieve headlines from the column in the center of the page or the column on the right of the page.
 
 # Commands
 
