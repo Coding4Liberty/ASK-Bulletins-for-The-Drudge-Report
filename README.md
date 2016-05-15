@@ -1,4 +1,4 @@
-# ASK-Bulletins-for-The-Drudge-Report
+# ASK-News-Bulletins-for-The-Drudge-Report
 
 <img src="./images/108_px_logo.png" width="108">
 
