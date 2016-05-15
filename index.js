@@ -36,7 +36,7 @@ function getHeadlinesResponse(response) {
 		var result = []; 
 		
 		if (err) {
-			speechOutput = "Sorry, I am having trouble retrieving the latest headlines from The Druge Report. Please try again later.";
+			speechOutput = "Sorry, Bulletins is having trouble retrieving the latest headlines from The Druge Report. Please try again later.";
 		} else {
 
 			getNames(headlineResponse, "content"); 
@@ -133,14 +133,14 @@ function getHeadlinesResponse(response) {
 			if (/^\s+$/.test(result.toString())) {
 				intermediarySpeech = "<speak>An error has occurred. Please try again later. If you continue to receive this message, please contact the developer."
 			} else {
-				intermediarySpeech = "<speak>Here are the latest headlines from The Drudge Report: ";
+				intermediarySpeech = "<speak>Here are the latest headlines: ";
 				for (var c = 0; c < result.length; c++) {
 					intermediarySpeech += "<p>" + result[c].toString() + "</p> <break time='1s'/>";
 				}
 				
 			} 
 			
-			intermediarySpeech += ". That's all from The Drudge Report.</speak>";
+			intermediarySpeech += ". That's all from Bulletins.</speak>";
 			
 			speechOutput = {
 				speech: intermediarySpeech.toString(),
@@ -193,47 +193,47 @@ function makeHeadlineRequest(headlineLoadedCallback) {
 } 
 
 /**
- * DrudgeHeadlineRequester is a child of AlexaSkill.
+ * BulletinRequester is a child of AlexaSkill.
  * To read more about inheritance in JavaScript, see the link below.
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance
  */
-var DrudgeHeadlineRequester = function () {
+var BulletinRequester = function () {
     AlexaSkill.call(this, APP_ID);
 };
 
 // Extend AlexaSkill
-DrudgeHeadlineRequester.prototype = Object.create(AlexaSkill.prototype);
-DrudgeHeadlineRequester.prototype.constructor = DrudgeHeadlineRequester;
+BulletinRequester.prototype = Object.create(AlexaSkill.prototype);
+BulletinRequester.prototype.constructor = BulletinRequester;
 
-DrudgeHeadlineRequester.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
-    console.log("DrudgeHeadlineRequester onSessionStarted requestId: " + sessionStartedRequest.requestId
+BulletinRequester.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
+    console.log("BulletinRequester onSessionStarted requestId: " + sessionStartedRequest.requestId
         + ", sessionId: " + session.sessionId);
     // any initialization logic goes here
 };
 
-DrudgeHeadlineRequester.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
-    console.log("DrudgeHeadlineRequester onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
+BulletinRequester.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
+    console.log("BulletinRequester onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
     handleNewHeadlineRequest(response);
 };
 
 /**
  * Overridden to show that a subclass can override this function to teardown session state.
  */
-DrudgeHeadlineRequester.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
-    console.log("DrudgeHeadlineRequester onSessionEnded requestId: " + sessionEndedRequest.requestId
+BulletinRequester.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
+    console.log("BulletinRequester onSessionEnded requestId: " + sessionEndedRequest.requestId
         + ", sessionId: " + session.sessionId);
     // any cleanup logic goes here
 };
 
-DrudgeHeadlineRequester.prototype.intentHandlers = {
+BulletinRequester.prototype.intentHandlers = {
     "GetNewHeadlineIntent": function (intent, session, response) {
 		console.log("new headline intent reached");
 		handleNewHeadlineRequest(response);
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can ask Drudge to tell you the latest headlines, or, you can say exit... What can I help you with?", "What can I help you with?");
+        response.ask("You can ask Bulletins to tell you the latest headlines, or, you can say exit... What can I help you with?", "What can I help you with?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
@@ -259,7 +259,7 @@ function handleNewHeadlineRequest(response) {
 
 exports.handler = function (event, context) {	
 	
-    var headlineRequester = new DrudgeHeadlineRequester();
+    var headlineRequester = new BulletinRequester();
 	
     headlineRequester.execute(event, context);
 };
