@@ -1,4 +1,4 @@
-# ASK-Reporter-for-The-Drudge-Report
+# ASK-Reporter Dee-for-The-Drudge-Report
 
 <img src="./images/108_px_logo.png" width="108">
 
@@ -11,9 +11,9 @@
 Example phrases to open app:
 
 ```
-Alexa, open Reporter.
-Alexa, launch Reporter.
-Alexa, start Reporter.
+Alexa, open Reporter Dee.
+Alexa, launch Reporter Dee.
+Alexa, start Reporter Dee.
 ```
 
 ## Get the latest headlines
@@ -21,17 +21,17 @@ Alexa, start Reporter.
 Example phrases to read the latest headlines to you:
 
 ```
-Alexa, ask Reporter for the latest headlines.
-Alexa, ask Reporter for the top headlines.
-Alexa, tell Reporter to tell me the latest headlines.
-Alexa, tell Reporter to give me the latest headlines.
+Alexa, ask Reporter Dee for the latest headlines.
+Alexa, ask Reporter Dee for the top headlines.
+Alexa, tell Reporter Dee to tell me the latest headlines.
+Alexa, tell Reporter Dee to give me the latest headlines.
 
-Alexa, ask Reporter for information.
-Alexa, ask Reporter for the latest information.
-Alexa, tell Reporter to tell me the latest information.
-Alexa, tell Reporter to tell me information.
-Alexa, tell Reporter to give me the latest information.
-Alexa, tell Reporter to give me information.
+Alexa, ask Reporter Dee for information.
+Alexa, ask Reporter Dee for the latest information.
+Alexa, tell Reporter Dee to tell me the latest information.
+Alexa, tell Reporter Dee to tell me information.
+Alexa, tell Reporter Dee to give me the latest information.
+Alexa, tell Reporter Dee to give me information.
 ```
 
 ## Disclaimer
