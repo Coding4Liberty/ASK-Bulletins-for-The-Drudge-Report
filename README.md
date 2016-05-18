@@ -1,4 +1,4 @@
-# ASK-Reporter Dee-for-The-Drudge-Report
+# ASK-Reporter-for-The-Drudge-Report
 
 <img src="./images/108_px_logo.png" width="108">
 
